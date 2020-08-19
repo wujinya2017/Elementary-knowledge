@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .divv{
+            width: 375px;
+            height: 160px;
+            border: 5px solid #e0e1e1;
+            padding: 10px ;
+        }
+        .aa{
+            font-size: 15px; 
+        }
+        #name{
+            width: 350px;
+            height: 105px;
+            /* border: 1px solid black; */
+            overflow: hidden;
+        }
+        #search{
+            width: 120px;
+            height: 30px;
+        }
+        #text{
+            width: 200px;
+            height: 35px;
+
+        }
+        #button1{
+            width: 20px;
+            height: 20px;
+            float: left;
+            color:white;
+            margin: -20px 0px 0px 356px;
+            border: none;
+        }
+        .aaa{
+            float: left;
+            margin: 5px 10px 0px 0px ;
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <script>
+      
+        window.onload=function(){
+            loadStorage('name');
+        }
+
+        function saveStorage(id) {
+            var data = document.getElementById(id).value;
+            var time = new Date().getTime();
+            localStorage.setItem(time, data);
+            loadStorage('name');
+        }
+
+        function loadStorage(id) {
+            var result = ' ';
+            for (var i = 0; i < localStorage.length; i++) {
+                var key = localStorage.key(i);
+                var value = localStorage.getItem(key);
+                var date = new Date();
+                date.setTime(key); //使用 setTime() 向 1970/01/01 添加毫秒，并显示新的日期和时间。
+                var datestr = date.toGMTString();
+                result += '<div class="aaa">'+value+'</div >';
+            }
+            
+            var target = document.getElementById(id);
+            target.innerHTML = result;
+        }
+
+        function clearStorage() {
+            
+            alert("全部数据被清除。");
+            localStorage.clear();
+            loadStorage('name');
+            window.o
+        }
+    </script>
+    <div class="divv">
+        <input type="text" value="" id="text" placeholder="请输入想查找的商品"/>
+        <input type="button" value="搜索" id="search" onclick="saveStorage('text');"/>
+        <br/>
+        <span class="aa">最近搜索</span>
+        <div id="name">
+        </div>
+        <input type="button" value="X" id="button1" onclick="clearStorage('name');"/>
+    </div>
+</body>
+</html>

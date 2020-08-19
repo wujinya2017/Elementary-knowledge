@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>表单作业</title>
+        <style>
+            .ee{
+                width: 500px;
+            }
+            .aa{
+                color:red;
+            }
+            .bb{
+                margin: 15px 0px 0px 0px;
+            }
+            .dd{
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="testform" method="get" action="">
+            <h1>毕业生信息</h1>
+            <fieldset class="ee">
+                <legend class="aa">学生信息</legend>
+                姓&nbsp;&nbsp;名 <input class="cc" type="text" name="name1" autofocus="autofocus" required placeholder="请输入姓名" autofocus="autofocus"/><span class="dd">*</span>
+                <br/>
+                学&nbsp;&nbsp;号 <input class="cc" type="text" name="name1" autofocus="autofocus" required placeholder="请输入学号" autofocus="autofocus"/><span class="dd">*</span>
+                <br/>
+                手&nbsp;&nbsp;机 <input class="cc" type="text" name="name1" autofocus="autofocus" required placeholder="请输入手机号" autofocus="autofocus"/><span class="dd">*</span>
+                <br/>
+                邮&nbsp;&nbsp;箱 <input class="cc" type="text" name="name1" autofocus="autofocus" required placeholder="请输入邮箱地址" autofocus="autofocus"/><span class="dd">*</span>
+                <br/>
+            </fieldset>
+            <fieldset class="ee">
+                <legend class="aa">录取情况</legend>
+                录取学校 <input type="text" name="name1" autofocus="autofocus" required  autofocus="autofocus"/>
+                <br/>
+                入学成绩 <input type="text" name="name1" autofocus="autofocus" required  autofocus="autofocus"/>
+                <br/>
+                入学时间 <input type="date" name="name1" autofocus="autofocus" required autofocus="autofocus"/>
+                <br/>
+            </fieldset>
+            <input class="bb" type="submit" value="提交"/>
+        </form>
+    </body>
+</html>

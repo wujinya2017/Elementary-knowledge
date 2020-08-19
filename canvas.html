@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style type="text/css">
+            #award{
+                width: 200px;
+                height: 100px;
+                color: red;
+                position: absolute;
+                text-align: center;
+                line-height: 80px;
+                font-size: 40px;
+                font-weight: bold;
+            }
+            #mask{
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="award"></div>
+        <canvas id="mask" width="200" height="100"></canvas>
+        <script>
+            var arr=['一等奖','二等奖','三等奖','谢谢惠顾'];
+            var canvas=document.getElementById("mask");
+            var context=canvas.getContext('2d');
+            function fun(){
+                return( Math.floor(Math.random()*4));
+            }
+            var text=fun();
+            var div=document.getElementById("award");
+            div.innerHTML=arr[text];
+
+            context.fillStyle="gray";
+            context.fillRect(0,0,200,100);
+            canvas.onmousedown=function(){
+                canvas.onmousemove=function(e){
+                    context.globalCompositeOperation = "destination-out"; 
+                    context.clearRect(e.offsetX,e.offsetY,20,20);
+                }
+            }
+            canvas.onmouseup=function(){
+                var data = context.getImageData(0, 0,200,120).data;
+                var a=0;
+                for (var i=0;i<data.length;i+=4) {
+                    if (data[i] == 0 && data[i + 1] == 0 && data[i + 2] == 0 && data[i + 3] == 0) {
+                        a++;
+                    }
+                }
+                if(a>100*200*0.85){
+                    //通过删除canvas去掉遮罩层
+                    context.clearRect(0,0,200,100);
+                }
+            }   
+           
+        </script>
+    </body>
+</html>

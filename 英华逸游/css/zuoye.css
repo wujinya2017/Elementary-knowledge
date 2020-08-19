@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.aa{
+    background-color: black;
+    height:50px;
+    color: white;
+}
+#bs-1 li div{
+    font-weight: bold;
+    margin: 0px 10px;
+    padding: 0px 0px 15px 0px;
+}
+#bs-1 li div:hover{
+    color: orange;
+    border-bottom: 3px solid orange;
+}
+nav{
+    padding: 0px;
+}
+.ee{
+    width: 100%;
+    background-color: white;
+    display: none;
+    padding: 0px 50px;
+}
+.input1{
+    width: 40%;
+    height: 20%; 
+    position: absolute;
+    top:70%;
+    left: 30%;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 5px;
+    
+}
+.ee img{
+    float: left;
+    padding: 30px 20px;
+}
+.ee dd{
+    padding: 30px 0px;
+    float: left;
+}
+.ee p:nth-of-type(1){
+    font-size: 25px;
+    color: #1c5080;
+}
+.ee p:nth-of-type(2){
+    line-height: 18px;
+    color: #b5b5b5;
+}
+.ee p:nth-of-type(3){
+    line-height: 18px;
+    color: #b5b5b5;
+}
+.ee button{
+    background-color: white;
+    
+    float: left;
+}
+.bb{
+    background-color: #dddddd;
+    padding: 0px;
+}
+.bbbb{
+    padding: 0;
+    background-color: #14316d;
+    color: white;
+}
+.bbb div{
+    padding: 0px;
+}
+.remendiv{
+    font-size: 25px;
+    margin: 0px 50px;
+    border-left:5px solid red; 
+    display: none;
+}
+.remendiv1{
+    padding: 0px;
+    margin: 0px 50px;
+    display: none;
+}
+.remendiv1 p{
+    font-size: 25px;
+    margin: 20px 0px -10px 0px;
+    border-left:5px solid red; 
+}
+.remendiv1 span{
+    font-size: 16px;
+    font-weight: bold;
+}
+.xxx input{
+    display: none;
+}
+.dd{
+    padding: 0px;
+}
+.first{
+    width: 33%;
+    position: relative;
+    color: white;
+}
+.second{
+    width: 33%;
+    color: white;
+}
+.third{
+    width: 33%;
+    color: white;
+}
+.ddd p{
+    text-align: center;
+}
+footer{
+    background-color: black;
+}
+footer dt{
+    color: white;
+}
+.ff span{
+    color: #b5b5b5;
+    margin: 0px 5px;
+}
+.fff span{
+    color: #b5b5b5;
+    margin: 0px 5px;
+}
+.kkk{
+    display: none;
+}
+.ziuxiabian{
+    background-color: black;
+    padding: 50px 60px;
+    display: none;
+}
+.ziuxiabian1{
+    background-color: black;
+    padding: 30px ;
+    font-size: 15px;
+    display: block;
+}
+.mkm button{
+    text-align: center;
+    margin: 10px 20px;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    border: 1px solid rgb(192, 186, 186);
+    background-color: #dddddd;
+}
+.mkm1{
+    display: none;
+}
+.mkm1 button{
+    text-align: center;
+    margin: 10px 20px;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    border: 1px solid rgb(192, 186, 186);
+    background-color: #dddddd;
+}
+
+@media screen and (max-width:767px){
+    .xxx{
+        background-color: white;
+    }
+
+    .bb{
+        background-color: #f5f5f5;
+    }
+    .ab1{
+        width: 100%;
+    }
+    .ab1 img{
+        width: 100%;
+        padding:10px 0px;
+    }
+    .remenchakan{
+        display: block;
+    }
+    .ab2{
+        
+        display: none;
+    }
+    .ab2 img{
+        width: 100%;
+        padding:  0px;
+    }
+    .ab3{
+        width: 40%;
+    }
+    .ab3 img{
+        height: 100%;
+    }
+    .ab4{
+        width: 60%; 
+        float: left;
+    }
+    .ab4 img{
+        height: 100%;
+    }
+    .ab5{
+        display: none;
+    }
+    .aa{
+        display: none;
+    }
+    .aaa{
+        background-color: white;
+    }
+    #bs-1{
+        background-color: black;
+    }
+    .ee{
+        display: block;
+    }
+    .bbbb{
+        display: none;
+    }
+    .eee{
+        display: none;
+    }
+    .remenh{
+        display: none;
+    }
+    .remenp{
+        display: none;
+    }
+    .remendiv{
+        display: block;
+    }
+    .remendiv1{
+        height: 100px;
+        display: block;
+    }
+    .bbb{
+        margin: 0px 35px;
+        padding: 0px;
+    }
+    .dd{
+        display: none;
+    }
+    .quancheng{
+        display: block;
+    }
+    .quancheng1{
+        display: none;
+    }
+    .k img{
+        width: 100%;
+        padding: 10px 50px;
+    }
+    .kk{
+        display: none;
+    }
+    .kkk{
+        display: block;
+    }
+    .kkk p{
+        font-size: 20px;
+        padding: 20px 30px;
+    }
+    .kkkk img{
+        padding: 10px 50px;
+    }
+    .ddd{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    .ziuxiabian{
+        display: block;
+    }
+    .ziuxiabian1{
+        display: none;
+    }
+    .mkm button{
+        text-align: center;
+        margin: 10px 20px;
+        padding: 10px 20px; 
+        border-radius: 5px; 
+        border: 1px solid rgb(192, 186, 186);        
+        background-color: white;
+    }
+    .mkm1{
+        display: block;
+    }
+    .mkm1 button{
+        text-align: center;
+        margin: 10px 20px;
+        padding: 10px 20px; 
+        border-radius: 5px; 
+        border: 1px solid rgb(192, 186, 186);        
+        background-color: white;
+    }
+}

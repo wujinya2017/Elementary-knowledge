@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1{
+            width: 400px;
+            height: 500px;
+            margin: 20px;
+            position:relative;
+            overflow: hidden;
+            border: 4px solid gainsboro;
+            background-color: black;
+        }
+        #div1 img{
+            width: 400px;
+            height: 300px;
+            cursor: pointer;
+			transition: all 0.6s;
+            overflow: hidden;
+        }
+        #div1:hover img{
+            transform: scale(1.2);
+            overflow: hidden;
+            opacity:0.6; 
+            filter: alpha(opacity=80);
+        }
+        #div2{
+            width: 400px;
+            height: 300px;
+            background-color: white;
+            position: absolute;
+            top: 300px;
+        }
+        #div1:hover #div2{
+            position: absolute;
+            top: 180px;
+            transition: all 0.6s ease;
+        }
+        #div2 h5{
+            padding: 0px 15px;
+            color: rgb(185, 180, 180);
+            line-height: 23px;
+            margin: 0px;
+            display: none;
+        }
+        #div1:hover h5{
+            display: block;
+        }
+        #div3{
+            width: 42px;
+            height: 42px;
+            background-color: orange;
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            border-radius: 21px;
+            position:absolute;
+            top:10px;
+            left:350px
+        }
+        #div4{
+            width: 400px;
+            height: 20px;
+            font-size: 12px;
+            padding: 2px 15px;
+            color: rgb(202, 198, 198);
+            position: absolute;
+            top: 480px;
+            background-color: white;
+        }
+        #div5{
+            width: 50px;
+            height: 25px;
+            background-color: orange;
+            font-size: 15px;
+            color: white;
+            padding: 5px 0px 0px 20px;
+            position: absolute;
+            top: -30px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <img src="./img/zhanqiao.jpg" >
+        <div id="div3">&nbsp;&nbsp;15<br>&nbsp;五月</div>
+        <div id="div2">
+            <div id="div5">照片</div>
+            <h2 style="padding: 0px 15px">青岛栈桥</h2>
+            <h3 style="color: red;padding:0px 15px">国家AAAA级旅游景区</h3>
+            <h5>青岛栈桥是青岛海滨风景区的景点之一，是国务院于1982年首批公布的国家级风景名胜区，也是首批国家AAAA级旅游景区。
+                青岛栈桥位于游人如织的青岛中山路南端，桥身从海岸探入如弯月般的青岛湾深处。桥身供游人参观并在此停靠旅游船，由此乘船可看海上青岛。
+            </h5>
+        </div>
+        <div id="div4">10分钟前&nbsp;&nbsp;&nbsp;123评论</div>
+    </div>
+</body>
+</html>
